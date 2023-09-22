@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu&display=swap');
+
+* {
+    margin: 0 auto;
+}
+
+body {
+    background: url("https://assets.codepen.io/6060109/ZigZag.png") no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.all-content {
+    background-color: white;
+    height: 527px;
+    width: 40vw;
+    align-content: center;
+    margin: 5% auto;
+    min-width: 300px;
+    border-radius: 5px;
+}
+
+.close-icon {
+    position: relative;
+    top: 1.5%;
+    right: -88%;
+    
+}
