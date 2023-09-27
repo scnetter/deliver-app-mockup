@@ -40,7 +40,6 @@ h2, h5, h6, a {
 }
 
 .panel {
-    width: 90%;
     width: 350px;
     height: 650px;
     background-color: #fff;
