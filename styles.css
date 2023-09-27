@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 * {
     margin: 0;
@@ -13,30 +14,37 @@ body, html {
 body {
     background: url("https://assets.codepen.io/6060109/ZigZag.png") no-repeat;
     background-size: cover;
-    display: flex;
 }
 
-h2:nth-of-type(1) {
-    color: #2F463D;
+h2, h5 {
+    color: #28463D;
+}
+
+h2, h5, h6, a {
     font-family: Montserrat;
+}
+
+.inner-container > h2 {
+
     font-size: 22px;
     font-weight: 600;
     padding-top: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 
 }
 
-p {
+
+.inner-container > p {
     color: #828282;
     font-family: Ubuntu;
     font-size: 14px;
-    font-weight: 400;
     line-height: 26px;
 }
+
 .panel {
     width: 90%;
     min-width: 300px;
-    height: 700px;
+    height: 650px;
     background-color: #fff;
     margin: 70px auto;
     box-shadow: 0px 40px 40px -20px #3C7861;
@@ -53,6 +61,44 @@ p {
 .inner-container {
     width: 100%;
     text-align: center;
-    box-sizing: border-box;
     padding: 55px 45px;
+    /* Using border-box width percentage includes padding */
+    box-sizing: border-box;
+}
+
+.inner-container > h2 {
+    margin: 20px 0 15px;
+}
+
+#food-selection {
+    display: flex;
+    background-color: #f0fff5;
+    border-radius: 5px;
+    margin: 40px 0 20px;
+    align-items: center;
+    text-align: left;
+}
+
+
+.food-name-price {
+    padding-left: 15px;
+    width: 50%;
+}
+
+.food-name-price h5 {
+    font-weight: 800;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.food-name-price h6 {
+    font-weight: 500;
+    color: #7A8F85;
+    font-size: 12px;
+}
+
+#food-selection a {
+    color: #477A66;
+    font-weight: bold;
+    font-size: 12px;
 }
