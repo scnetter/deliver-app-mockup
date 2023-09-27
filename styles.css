@@ -95,6 +95,17 @@ h2, h5, h6, a {
     font-size: 12px;
 }
 
+.circle {
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    background-color: #E0E0E0;
+}
+
+.green {
+    background-color: #67bd99;
+}
+
 #food-selection a {
     color: #477A66;
     font-weight: bold;
@@ -113,4 +124,15 @@ h2, h5, h6, a {
     font-weight: 650;
     font-size: 15px;
     margin-top: 10px;
+}
+
+#circles-container {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    margin-top: 15px;
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
 }
