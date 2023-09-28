@@ -42,6 +42,7 @@ h2, h5, h6, a {
     margin-right: -15px;
     position: absolute;
     left: 20px;
+    display: none;
 
 }
 
@@ -49,6 +50,7 @@ h2, h5, h6, a {
     margin-left: -15px;
     position: absolute;
     right: 20px;
+    display: none;
 }
 
 .inner-container > p {
@@ -169,7 +171,7 @@ h2, h5, h6, a {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 992px) {
 
-    .desktop {
+    #left-panel, #right-panel {
         display: block;
         z-index: -1;
     }
