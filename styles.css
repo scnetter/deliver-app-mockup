@@ -14,6 +14,8 @@ body, html {
 body {
     background: url("https://assets.codepen.io/6060109/ZigZag.png") no-repeat;
     background-size: cover;
+    display: flex;
+    position: relative;
 }
 
 h2, h5 {
@@ -31,6 +33,23 @@ h2, h5, h6, a {
     padding-bottom: 10px;
 }
 
+.small {
+    height: 50%;
+    width: 50%;
+}
+
+#left-panel {
+    margin-right: -15px;
+    position: absolute;
+    left: 20px;
+
+}
+
+#right-panel {
+    margin-left: -15px;
+    position: absolute;
+    right: 15px;
+}
 
 .inner-container > p {
     color: #828282;
@@ -38,6 +57,7 @@ h2, h5, h6, a {
     font-size: 14px;
     line-height: 26px;
 }
+
 
 .panel {
     width: 350px;
@@ -47,6 +67,10 @@ h2, h5, h6, a {
     box-shadow: 0px 40px 40px -20px #3C7861;
     border-radius: 5px;
     position: relative;
+}
+
+.desktop {
+    display: none;
 }
 
 #close-icon {
@@ -111,10 +135,10 @@ h2, h5, h6, a {
     font-size: 12px;
 }
 
-#ready-btn {
+.order-btn {
     width: 100%;
     border-radius: 5px;
-    background: #46A67E;
+    background: #808080;
     box-shadow: 0px 20px 20px 0px rgba(103, 189, 153, 0.20);
     border: none;
     height: 50px;
@@ -123,6 +147,11 @@ h2, h5, h6, a {
     font-weight: 650;
     font-size: 15px;
     letter-spacing: .8px;
+    margin-top: 60px;
+}
+
+.active {
+    background: #46A67E;
     margin-top: 10px;
 }
 
@@ -135,4 +164,15 @@ h2, h5, h6, a {
     left: 50%;
     bottom: 8%;
     transform: translateX(-50%);
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .desktop {
+        display: block;
+        z-index: -1;
+    }
+
+
 }
