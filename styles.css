@@ -15,7 +15,6 @@ body {
     background: url("https://assets.codepen.io/6060109/ZigZag.png") no-repeat;
     background-size: cover;
     display: flex;
-    position: relative;
 }
 
 h2, h5 {
@@ -24,18 +23,6 @@ h2, h5 {
 
 h2, h5, h6, a {
     font-family: Montserrat;
-}
-
-.inner-container > h2 {
-    font-size: 22px;
-    font-weight: 600;
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-
-.small {
-    height: 50%;
-    width: 50%;
 }
 
 #left-panel {
@@ -51,6 +38,18 @@ h2, h5, h6, a {
     position: absolute;
     right: 20px;
     display: none;
+}
+
+.inner-container > h2 {
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.small {
+    height: 50%;
+    width: 50%;
 }
 
 .inner-container > p {
@@ -141,7 +140,7 @@ h2, h5, h6, a {
     width: 100%;
     border-radius: 5px;
     background: #808080;
-    box-shadow: 0px 20px 20px 0px rgba(103, 189, 153, 0.20);
+    box-shadow: 0px 20px 20px 0px rgba(167, 167, 167, 0.20);
     border: none;
     height: 50px;
     font-family: Montserrat;
@@ -154,6 +153,7 @@ h2, h5, h6, a {
 
 .active {
     background: #46A67E;
+    box-shadow: 0px 20px 20px 0px rgba(103, 189, 153, 0.20);
     margin-top: 10px;
 }
 
